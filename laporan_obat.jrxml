@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="890" pageHeight="842" columnWidth="850" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2372a87c-1c7e-4f4d-97ea-b5b039f37e36">
+	<property name="ireport.zoom" value="1.1000000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     obat.`id_obat` AS obat_id_obat,
+     obat.`nama_obat` AS obat_nama_obat,
+     obat.`kategori` AS obat_kategori,
+     obat.`jenis` AS obat_jenis,
+     obat.`stok` AS obat_stok,
+     obat.`harga` AS obat_harga,
+     obat.`brand` AS obat_brand,
+     obat.`bpjs_status` AS obat_bpjs_status,
+     obat.`nip` AS obat_nip,
+     obat.`input_date` AS obat_input_date,
+     obat.`edit_date` AS obat_edit_date
+FROM
+     `obat` obat]]>
+	</queryString>
+	<field name="obat_id_obat" class="java.lang.Integer"/>
+	<field name="obat_nama_obat" class="java.lang.String"/>
+	<field name="obat_kategori" class="java.lang.String"/>
+	<field name="obat_jenis" class="java.lang.String"/>
+	<field name="obat_stok" class="java.lang.Integer"/>
+	<field name="obat_harga" class="java.lang.String"/>
+	<field name="obat_brand" class="java.lang.String"/>
+	<field name="obat_bpjs_status" class="java.lang.String"/>
+	<field name="obat_nip" class="java.lang.String"/>
+	<field name="obat_input_date" class="java.sql.Timestamp"/>
+	<field name="obat_edit_date" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement x="317" y="0" width="274" height="34" uuid="d0140bd2-35f8-4dc0-a0cc-b02924f426a6"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PUSKESMAS DEPOK JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="57" width="412" height="20" uuid="b3437cfa-731a-4fb0-8726-1946932d795d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Email: puskesmasdejay@gmail.com No.Telepon: 089638104494]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="35" width="304" height="20" uuid="17aee63d-6c0f-4992-99c8-f530c499f722"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL.Melati Raya, Depok Jaya, Pancoran Mas]]></text>
+			</staticText>
+			<image>
+				<reportElement x="81" y="0" width="66" height="77" uuid="b12dc5c2-e516-4b84-9c98-725f91ba5f57"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Documents\\NetBeansProjects\\Puskesmas\\src\\Image\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="367" y="13" width="158" height="24" uuid="7e6d52f7-5e64-4105-9c16-2abbfeb7542b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN OBAT]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="869" height="1" uuid="c59537b6-f0ac-4e84-9bfb-04c37a645e4e"/>
+			</line>
+			<line>
+				<reportElement x="1" y="3" width="868" height="1" uuid="c37e55c3-0bdf-483a-a15f-fd39b9bc327a"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="0" width="80" height="20" backcolor="#A5BAD1" uuid="67e3767f-419a-4c52-b6dd-a62b6802caf7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID  Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="81" y="0" width="72" height="20" backcolor="#A5BAD1" uuid="33f68324-6b9c-4637-a1f1-4fadbe4b50dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="153" y="0" width="72" height="20" backcolor="#A5BAD1" uuid="020a4e82-57d9-4a91-b3aa-76e10c39d151"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="225" y="0" width="74" height="20" backcolor="#A5BAD1" uuid="275674b5-bf69-446c-977c-7be4ef2ad35e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="296" y="0" width="67" height="20" backcolor="#A5BAD1" uuid="e91f8e41-4240-4fe4-9568-5aff23d40555"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="363" y="0" width="85" height="20" backcolor="#A5BAD1" uuid="d92b3922-7e1d-4b1a-a55c-8b89d0b7c0de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="438" y="0" width="81" height="20" backcolor="#A5BAD1" uuid="f6a5c990-b3c0-4742-9d44-3ee191e3bcde"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="513" y="0" width="82" height="20" backcolor="#A5BAD1" uuid="10a54acc-8d8e-4c84-a185-b6f30489721f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BPJS Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="592" y="0" width="69" height="20" backcolor="#A5BAD1" uuid="93a70912-094f-4c17-b801-93cd12c28a66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="661" y="0" width="101" height="20" backcolor="#A5BAD1" uuid="8d413d84-226f-4abb-ada7-78630098693a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Input Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="758" y="0" width="92" height="20" backcolor="#A5BAD1" uuid="3cc36b8d-7d87-491d-abb0-84bc339388a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Edit Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="0" width="78" height="20" uuid="878790bc-9b14-4a52-8b7a-fd71e5803f44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_id_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="72" height="20" uuid="0e3eba6c-179a-492d-906e-862559221a89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_nama_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="0" width="71" height="20" uuid="05d04e47-f94c-45d9-9cee-08bca2675b55"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="0" width="70" height="20" uuid="26815c7d-7d33-4763-aa55-b0b1895b5fab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="0" width="64" height="20" uuid="49012606-a0c3-4195-9b03-f0efffecf9f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="367" y="0" width="65" height="20" uuid="eb9df9bd-92d1-4bbf-83c8-70d973156f43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="0" width="81" height="20" uuid="ee090ebe-8bf6-44ea-b7a5-10b9839435ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_brand}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="0" width="69" height="20" uuid="2c90f834-a22a-46ea-a8a5-5399997c9337"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_bpjs_status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="593" y="0" width="69" height="20" uuid="bc04979d-b5e1-42a9-a6b4-89eab98105b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_nip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="662" y="0" width="100" height="20" uuid="864b19f0-b23e-44a4-910a-873dd6a8edd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_input_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="761" y="0" width="92" height="20" uuid="f8179234-90e6-40ed-a8d4-fe12e2bba49b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{obat_edit_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="683" y="-2" width="36" height="20" uuid="f89eb5f7-20d8-46cf-8f89-496549185a09"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Depok,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="720" y="-2" width="115" height="20" uuid="78c94246-2fe6-4980-8c88-0d2add945722"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id","ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="712" y="60" width="84" height="20" uuid="d1729f1c-b436-4077-9772-0fd98bcc9059"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[(                         )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="723" y="78" width="60" height="20" uuid="b723907d-250b-49b5-a1ac-50abe3b4b64f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Staff Admin]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

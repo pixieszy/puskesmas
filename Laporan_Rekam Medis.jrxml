@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="700" pageHeight="842" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b60e5b4a-fad3-4bf2-8020-af449dbc586c">
+	<property name="ireport.zoom" value="3.797498335832421"/>
+	<property name="ireport.x" value="1424"/>
+	<property name="ireport.y" value="285"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     rekam_medis.`id_rekam` AS rekam_medis_id_rekam,
+     rekam_medis.`id_pasien` AS rekam_medis_id_pasien,
+     rekam_medis.`id_dokter` AS rekam_medis_id_dokter,
+     rekam_medis.`id_poli` AS rekam_medis_id_poli,
+     rekam_medis.`keluhan` AS rekam_medis_keluhan,
+     rekam_medis.`diagnosa` AS rekam_medis_diagnosa,
+     rekam_medis.`tindakan` AS rekam_medis_tindakan,
+     rekam_medis.`catatan_dokter` AS rekam_medis_catatan_dokter,
+     rekam_medis.`resep` AS rekam_medis_resep,
+     rekam_medis.`tanggal_kunjungan` AS rekam_medis_tanggal_kunjungan
+FROM
+     `rekam_medis` rekam_medis]]>
+	</queryString>
+	<field name="rekam_medis_id_rekam" class="java.lang.String"/>
+	<field name="rekam_medis_id_pasien" class="java.lang.String"/>
+	<field name="rekam_medis_id_dokter" class="java.lang.String"/>
+	<field name="rekam_medis_id_poli" class="java.lang.String"/>
+	<field name="rekam_medis_keluhan" class="java.lang.String"/>
+	<field name="rekam_medis_diagnosa" class="java.lang.String"/>
+	<field name="rekam_medis_tindakan" class="java.lang.String"/>
+	<field name="rekam_medis_catatan_dokter" class="java.lang.String"/>
+	<field name="rekam_medis_resep" class="java.lang.String"/>
+	<field name="rekam_medis_tanggal_kunjungan" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="2" width="67" height="77" uuid="210baee9-463a-46a1-ad1e-9a82d1663a41"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Documents\\NetBeansProjects\\Puskesmas\\src\\Image\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="2" width="257" height="28" uuid="e8d66b33-9623-47dc-960a-b349945d9a73"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PUSKESMAS DEPOK JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="30" width="296" height="20" uuid="d9803c36-2b3f-486e-aec2-53e726f49e80"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL.Melati Raya, Depok Jaya, Pancoran Mas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="50" width="437" height="20" uuid="a94f1377-f8fe-47c6-b315-4252c0eb0997"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Email:puskesmasdejay@gmail.com | No.Telepon: 089638104494]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="5" width="257" height="30" uuid="48b42259-7f67-48f9-a226-dd156d5982d7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA REKAM MEDIS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1" width="660" height="1" uuid="bbb6fd1b-637a-47fa-aa97-49de213a13a7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="4" width="660" height="1" uuid="d7682d37-f633-4a33-9687-5e26f1770d02"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="61ce456c-96e8-4afb-aba9-265eb72e3430"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Rekam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="55" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="294f41b5-eca7-4c76-87eb-c1d7ee786cb9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Pasien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="110" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="a6efc494-6880-475d-8418-c44e5a53f6a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="165" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="7edcf7ca-31c1-4f83-a961-6c30ae6155f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Poli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="220" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="a25002b3-cec1-422c-a32b-2339844f81e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Keluhan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="275" y="0" width="55" height="20" backcolor="#A5BAD1" uuid="b7a2f1d7-ecfd-4c26-89b0-92c998a511ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diagnosa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="330" y="0" width="60" height="20" backcolor="#A5BAD1" uuid="d2f3abc2-0e9c-469c-93d4-8af0abb0a044"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tindakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="385" y="0" width="96" height="20" backcolor="#A5BAD1" uuid="dde941cd-728e-4154-93e5-0b3daf62d31f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Catatan Dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="481" y="0" width="109" height="20" backcolor="#A5BAD1" uuid="19fb609f-26be-4580-88a4-6aef8b427937"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resep]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="590" y="0" width="70" height="20" backcolor="#A5BAD1" uuid="88e3e5a3-0f86-415a-bcea-192b260a6cd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kunjungan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="ce4bea24-00f0-48f7-b3da-2b71ad52c0a2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_id_rekam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="55" height="20" uuid="5ff46db8-2306-4e57-ab01-1ac03584005c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_id_pasien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="55" height="20" uuid="35e12d2d-5ff4-4956-b2ab-942c710cbcd3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_id_dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="55" height="20" uuid="43e102e9-243b-4ea2-92e6-5f1dcc70c24c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_id_poli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="55" height="20" uuid="b409a9fa-589e-49d7-ab66-7dbf2b494ebd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_keluhan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="55" height="20" uuid="85b61125-2e53-492e-b12f-60b56bb461f1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_diagnosa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="0" width="55" height="20" uuid="36fd088c-ddb3-474b-97dd-5d9743f6164b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_tindakan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="0" width="84" height="39" uuid="444d532f-ccf0-467f-9ea6-d9b36eaea4a0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_resep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="589" y="0" width="70" height="20" uuid="9e11216d-a1d1-4989-aa51-b42700edd8e8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_tanggal_kunjungan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="0" width="79" height="39" uuid="4755a5d4-705d-4647-b763-7817e5943758"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rekam_medis_catatan_dokter}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="113" splitType="Stretch">
+			<staticText>
+				<reportElement x="516" y="0" width="39" height="20" uuid="3713e03d-9162-42be-b57b-dc44c4e3f35e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Depok,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="559" y="0" width="100" height="20" uuid="90dc1c1e-c7b0-4a02-9eab-d4d227850a4c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id","ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="531" y="70" width="109" height="20" uuid="b45f5626-406f-4df7-89c7-050e44052d68"/>
+				<text><![CDATA[(                                    )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="558" y="91" width="59" height="20" uuid="eb70599f-36a2-48ac-82e6-bffeb70ba6b5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Satff Admin]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
